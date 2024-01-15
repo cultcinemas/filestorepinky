@@ -10,19 +10,19 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6834298830:AAFr4vAimhcUZw0uLY7Sosenz02gkBWiSVg")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6714442266:AAGqf26-CCOJV79NCjHD8urncQcgeCwgZmA")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "24972516"))
+APP_ID = int(os.environ.get("APP_ID", "27501733"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "1189646188dbbedb379a8026d79a2192")
+API_HASH = os.environ.get("API_HASH", "687b5c7656849e9a3b125d691f824497")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002023304132"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001627533048"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5055470937"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5847742709"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
@@ -32,7 +32,7 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://unzipbot:unzipbot@cluster
 DB_NAME = os.environ.get("DATABASE_NAME", "bashamoviefiledb")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001900461575"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -40,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "5452354891 876726277 5811023193").split()):
+    for x in (os.environ.get("ADMINS", "5452354891 1392184089 5602172369").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
